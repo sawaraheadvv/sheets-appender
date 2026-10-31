@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheets-appender"
+version = "1.0.0"
+description = "列の所有権を分けた表を Google スプレッドシートで維持する共通ライブラリ"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "google-api-python-client>=2.100",
+    "google-auth>=2.30",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["sheets_appender"]
